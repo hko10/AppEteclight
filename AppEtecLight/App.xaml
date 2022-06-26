@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEtecLight.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="fonteCustomizada" TargetType="Label">
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String"
+                                    Android="AmaticSC-Bold.ttf#AmaticSC-Bold" />
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+
+            <Style x:Key="fonteCustomizada2" TargetType="Label" BaseResourceKey="fonteCustomizada">
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String"
+                                    Android="AmaticSC-Regular.ttf#AmaticSC-Regular" />
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="fonteCustomizada3" TargetType="Label" BaseResourceKey="fonteCustomizada">
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String"
+                                    Android="IndieFlower-Regular.ttf#IndieFlower-Regular" />
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="titulo" TargetType="Label" BaseResourceKey="fonteCustomizada">
+                <Setter Property="FontSize" Value="100" />
+            </Style>
+
+            <Style x:Key="subTitulo" TargetType="Label" BaseResourceKey="fonteCustomizada">
+                <Setter Property="FontSize" Value="45" />
+                <Setter Property="VerticalOptions" Value="End" />
+            </Style>
+
+            <Style x:Key="textoCinza" TargetType="Label" BaseResourceKey="fonteCustomizada3">
+                <Setter Property="TextColor" Value="Gray" />
+                <Setter Property="FontSize" Value="25" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="HorizontalOptions" Value="End" />
+            </Style>
+
+            <Style x:Key="textoBranco" TargetType="Label" BaseResourceKey="fonteCustomizada2">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="35" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
